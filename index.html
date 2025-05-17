@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardhman</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; /* Light background for contrast */
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: #2d3e50; /* Dark header background */
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for header */
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f39c12; /* Highlight color on hover */
+        }
+
+        .banner {
+            position: relative;
+            background: url('banner.jpg') no-repeat center center/cover;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 45px;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .search-bar {
+            margin-top: 20px;
+        }
+
+        .search-bar input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f39c12;
+            color: white;
+            cursor: pointer;
+        }
+
+        main {
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        #categories {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .category {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 250px;
+            margin: 15px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .category img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .category:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .category-details {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .category-details h3 {
+            margin: 5px 0;
+            color: #333;
+        }
+
+        .category-details p {
+            color: #777;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #e91e63;
+        }
+
+        footer {
+            background: #2d3e50; /* Dark footer background */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="image/logo1.png" alt="Vardhman Logo">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <div>
+            <h1>Welcome to Vardhman</h1>
+           
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Our Categories</h1>
+        <section id="categories">
+            <!-- T-Shirts Category -->
+            <div class="category">
+                <a href="tshirts.html">
+                    <img src="image/t3.jpeg" alt="T-Shirts">
+                    <div class="category-details">
+                        <h3>Stylish T-Shirts</h3>
+                        <p>Comfortable and trendy designs.</p>
+                        <div class="price">&#8377;600</div>
+                    </div>
+                </a>
+ 
+            <!-- Jeans Category -->
+            <div class="category">
+                <a href="jeans.html">
+                    <img src="image/j1.jpeg" alt="Jeans">
+                    <div class="category-details">
+                        <h3>Casual Jeans</h3>
+                        <p>Perfect fit for everyday wear.</p>
+                        <div class="price">&#8377;1200</div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Ladies Wear Category -->
+            <div class="category">
+                <a href="ladieswear.html">
+                    <img src="image/l2.jpeg" alt="Ladies Wear">
+                    <div class="category-details">
+                        <h3>Elegant Ladies Wear</h3>
+                        <p>Stylish outfits for all occasions.</p>
+                        <div class="price">&#8377;1500</div>
+                    </div>
+                </a>
+            </div>
+
+           
+            <!-- Shirts Category -->
+            <div class="category">
+                <a href="shirts.html">
+                    <img src="image/f4.jpeg" alt="Shirts">
+                    <div class="category-details">
+                        <h3>Formal Shirts</h3>
+                        <p>Sharp and stylish for work or parties.</p>
+                        <div class="price">&#8377;1400</div>
+                    </div>
+                </a>
+            </div>
+
+        
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact us at prerana1510@gmail.com<br>Mobile Number :+91 0000111123 </p>
+        <p>&copy; 2024 Vardhman. All rights reserved.</p>
+    </footer>
+</body>
+</html>
